@@ -1,4 +1,4 @@
-<link rel='stylesheet' type='text/css' href='css/home.php'>
+<link rel='stylesheet' type='text/css' href='css/style.php'>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -36,7 +36,7 @@
                   </tr>
                 </thead>
                 <tbody class="table_body">
-                    <!-- customer data will be brought dynamically from db -->
+                    <!-- fetched dynamically from db -->
                 </tbody>
             </table>
 
@@ -46,26 +46,27 @@
             <div class="transfer_window">
                 <div class="sendbox">
                     <select id="customer1"  name="c1" placeholder="Sender">
-                     <!-- options will be brought dynamically from db -->
+                     <!-- fetched dynamically from db -->
                     </select>
                 
                     <i class="fa-solid fa-arrow-right right_arrow"></i>
                 
                     <select id="customer2" name="c2" placeholder="Receiver">
-                        <!-- options will be brought dynamically from db -->
+                        <!-- fetched dynamically from db -->
                     </select>
                 </div>
             
                 <div class="amount_box">
                     <input id="amount" name="amount" type="int" placeholder="Amount">
                 </div>
+                
             
                 <div id="send_btn" >Send</div>              
             </div>
             
 
             <div class="transaction_window">
-                    <!-- options will be brought dynamically from db -->
+                    <!-- fetched dynamically from db -->
             </div>
         </div>
         <script src="js/page_switch.js"></script>                

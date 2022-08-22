@@ -8,13 +8,11 @@ $f= "transaction";
 function fetch_data($table){
     global $db;
     $sql="select * from ".$table;
-    // $sql = "select * from customers";
     $result = mysqli_query($db, $sql);
     return $result;
 }
 
 function show_data_json($Cdata, $Tdata){    
-    
     // Find the number of records returned and put in array
     $num1 = mysqli_num_rows($Cdata);
     $num2 = mysqli_num_rows($Tdata);
@@ -52,7 +50,8 @@ function show_data_json($Cdata, $Tdata){
 
     //TRANSACTION TABLE 
     $j= 0;
-    while($j<$num2 && $num2>0){   
+    while($j<$num2 && $num2>0){
+
         $new_msg = $row_array2[$j];
         if($j==0){      
             $starter_record = array($new_msg);      
@@ -81,6 +80,5 @@ function show_data_json($Cdata, $Tdata){
 $Cdata= fetch_data("customers");
 $Tdata= fetch_data("transaction");
 show_data_json($Cdata, $Tdata);
-
 
 ?>
