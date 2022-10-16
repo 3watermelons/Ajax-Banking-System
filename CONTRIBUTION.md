@@ -1,6 +1,6 @@
 # How to contribute to this project
 
-TwitterBot welcomes contributions from the community.
+Banking-System welcomes contributions from the community.
 
 ## Setting up your own fork of this repo.
 

@@ -21,7 +21,7 @@ This project stimulates the transactions in a banking system. HTML, CSS, JS has 
 
 
 ## How to contribute    
-Check out our [Contributing Documentation](/CONTRIBUTION.md) 
+Check out our [Contribution Documentation](/CONTRIBUTION.md) 
 
 ### Note
 
