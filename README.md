@@ -21,13 +21,13 @@ This project stimulates the transactions in a banking system. HTML, CSS, JS has 
 
 
 ## How to contribute    
-Check out our [Contributing Documentation](/CONTRIBUTING.md) 
-
-### Note
 
 1. First create issue for the task which you would like to contribute to by explaining your approach in it.
 2. Project maintatiners will assign the issue to you if it's worthy and not repeated.
 3. While creating pull request mention the issue number in it.
+4. If you want to work on an existing issue, request maintainers for it to be assigned to you.  
+
+Check out our [Contributing Documentation](/CONTRIBUTING.md) for the technical part(git and github)
 
 ## Guidelines
 
