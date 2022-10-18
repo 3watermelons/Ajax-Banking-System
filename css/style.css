@@ -1,4 +1,5 @@
-<?php header("Content-type: text/css"); ?>
+/* <?php header("Content-type: text/css"); ?> */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Josefin+Sans:wght@100;300&display=swap");
 
 *{
     margin: 0;
@@ -6,7 +7,7 @@
 }
 
 body{
-    padding: 4% 7%;
+    /* padding: 4% 7%; */
 }
 
 .alert{
@@ -180,6 +181,89 @@ body{
 }
 
 
+ul li a{
+    color:black;
+    text-decoration: none;
+    position: center;
+	font-size: 1.5rem;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 600;
+    top:50%;
+    bottom:50%;
+}
+
+#icon{
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	margin-top:-5px;
+}
+
+:root{
+	--primary-color: #fff;
+	--nav-color:#f4f1f1;
+	--secondary-color : #403e3e;
+	--extra-color:#efefef;
+}
+.dark-theme{
+	--primary-color: #151111;
+	--nav-color:#454448;
+	--secondary-color : #fcf4f4;
+	--extra-color:#2B2B2B;
+}
+
+#navb {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+	background-color: rgb(166, 187, 194);
+	padding: 5px 5px;
+
+}
+.text {
+	position: center;
+	font-size: 1.5rem;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 900;
+	color:rgb(8, 0, 255);
+    top:50%;
+    
+}
+
+.mode{
+	float: right;
+	margin-right: 5px;
+	/* margin-top: 5px; */
+}
+.mode span{
+	font-family: "Comfortaa", cursive;
+	font-size: 16px;
+}
 
 
+.find {
+    top:50%;
+    bottom:50%;
+	font-weight: lighter;
+	font-size: 1.7rem;
+    padding:10px;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 600;
+    
+    
+}
 
+a{
+    text-decoration: none;
+    color:black;
+    top:50%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:center;
+    
+}
