@@ -48,7 +48,7 @@
     <div class="mode d-flex align-items-center">
       <a class="nav-link" href="index.html"> <span class="find">Home</span></a>
       <a class="nav-link" href="about.html"> <span class="find">About Us</span></a>
-      <!-- <img class="logo" id="icon" src="img/moon.png" /> -->
+      <img class="logo" id="icon" src="images/moon.png" />
    </div>
   </div>
 </nav>
@@ -113,6 +113,30 @@
         <script src="js/update_db.js"></script>
 
         <script src="js/fetch_db.js"></script>
+        <script>
+
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    icon.src = "images/sun.png";
+    localStorage.setItem("theme", "dark");
+  } else {
+    icon.src = "images/moon.png";
+    localStorage.setItem("theme", "light");
+  }
+};
+
+const initIcon = () => {
+  if (document.body.classList.contains("dark-theme")) {
+    icon.src = "images/sun.png";
+  } else {
+    icon.src = "images/moon.png";
+  }
+};
+window.onload = initIcon();
+
+        </script>
 
     </div>
 
