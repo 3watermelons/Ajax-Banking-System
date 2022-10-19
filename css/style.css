@@ -1,12 +1,20 @@
-<?php header("Content-type: text/css"); ?>
+/* <?php header("Content-type: text/css"); ?> */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Josefin+Sans:wght@100;300&display=swap");
 
 *{
     margin: 0;
     padding: 0;
+    
 }
 
-body{
-    padding: 4% 7%;
+:root{
+	--primary-color:rgb(255, 255, 255);
+	--nav-color:#f4f1f1;
+	--secondary-color : #000000;
+	--extra-color:#2800ef;
+    --top-nav: rgb(166, 187, 194);
+    --body-color:rgba(255, 255, 255, 0.017);
+    
 }
 
 .alert{
@@ -24,6 +32,8 @@ body{
 
 .bg_holder{
     background: no-repeat url(../images/home_bg.jpg);
+    /* trying to change background image to darker
+    background-color: var(--body-color); */
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -32,7 +42,9 @@ body{
 
 .container1 {
     opacity:.8;
-    background-color: rgb(238, 248, 248);
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    /* background-color: rgb(238, 248, 248); */
     font-size: 1.8vw;
     width: 36em;
     height: 16.5em;
@@ -60,12 +72,15 @@ body{
 
 .tab1 {
     padding: 0.4em;
+    color:var(--secondary-color);
+
 }
 .tab1:hover {
     cursor:pointer;
     transition-property: background-color ;
     transition-duration: 0.2s;
     background-color: rgb(206, 206, 227);
+    color:black;
 }
 
 .active1{
@@ -76,6 +91,8 @@ body{
     display: block;
     padding-left: 0.5em;
     font-size: 1.7vw;
+    color:var(--primary-color);
+
 }
 
 .ctmr_list {
@@ -84,6 +101,8 @@ body{
     display: flex;
     flex-direction: column;
     list-style: none;
+    color:var(--primary-color);
+
 }
 
 .ctmr {
@@ -98,6 +117,8 @@ body{
     box-shadow: 0.09em 0.12em rgb(110 105 101);
     transition-property: color;
     transition-duration: 0.6s;
+    color:var(--primary-color);
+
 }
 
 .ctmrbox{
@@ -137,6 +158,8 @@ body{
     width: 8.5em;
     height: 1.5em;
     margin-top: 1em;
+    color:var(--primary-color);
+
 }
 
 .right_arrow{
@@ -152,6 +175,8 @@ body{
     height: 1.1em;
     margin: 1.7em 9.48em 0em;
     border: solid black .5px;
+    color:var(--primary-color);
+
 }
 
 #send_btn{
@@ -180,6 +205,95 @@ body{
 }
 
 
+ul li a{
+    color:black;
+    text-decoration: none;
+    position: center;
+	font-size: 1.5rem;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 600;
+    top:50%;
+    bottom:50%;
+    color: var(--nav-color);
+}
+
+#icon{
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	margin-top:-5px;
+}
+
+
+.dark-theme{
+	--primary-color: #000000;
+	--nav-color:#ffffff;
+	--secondary-color : #fcf4f4;
+	--extra-color:#fafafa;
+    --top-nav:#060b50;
+    --body-color:rgba(18, 17, 17, 0.358);
 
 
 
+}
+
+#navb {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+	background-color:var(--top-nav);
+	padding: 5px 5px;
+
+}
+.text {
+	position: center;
+	font-size: 1.5rem;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 900;
+	color:var(--extra-color);
+    top:50%;
+    
+}
+
+.mode{
+	float: right;
+	margin-right: 5px;
+	/* margin-top: 5px; */
+}
+.mode span{
+	font-family: "Comfortaa", cursive;
+	font-size: 16px;
+}
+
+
+.find {
+    top:50%;
+    bottom:50%;
+	font-weight: lighter;
+	font-size: 1.7rem;
+    padding:10px;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 600;
+    color:var(--secondary-color);
+    
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    top:50%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:center;
+    
+}
+
+i,table tr th{
+    color:var(--secondary-color);
+
+}
