@@ -82,14 +82,7 @@
         
             <div class="transfer_window">
                 <div class="sendbox">
-                    <select id="customer1"  name="c1" placeholder="Sender">
-                     <!-- fetched dynamically from db -->
-
-                     
-                    </select>
-                
-                    <i class="fa-solid fa-arrow-right right_arrow"></i>
-                
+                    
                     <select id="customer2" name="c2" placeholder="Receiver">
                         <!-- fetched dynamically from db -->
                     </select>
