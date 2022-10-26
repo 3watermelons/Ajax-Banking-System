@@ -31,7 +31,8 @@
 }
 
 .bg_holder{
-    background: no-repeat url(../images/home_bg.jpg);
+    /* Background image by Andre Taissin found on Unsplash */
+    background: no-repeat url(../images/andre-taissin-5OUMf1Mr5pU-unsplash.jpg);
     /* trying to change background image to darker
     background-color: var(--body-color); */
     background-size: 100% 100%;
