@@ -5,19 +5,25 @@ Install Xampp for DB and server
 # Project Title
 This project stimulates the transactions in a banking system. HTML, CSS, JS has been used in the front end and PHP on the server side. Ajax is used to dynamically reflect changes.
 
-## Initial Setup
+## Project Setup
 
-**Create DB and start Server**
-1. Start MySQL and Apache server from the Xampp control panel.
-2. Now go to MySQL Server Admin page -> SQL.
-3. Now we will initialize the database schema.
-4. For this, paste the queries given in initialize.sql in the SQL window and click on go (created local DB)(should be put after creatting inttialize file)
+**Step 1: Installing all the required softwares**
+1. [XAMPP](https://www.apachefriends.org/download.html)
+2. [MySQL](https://www.mysql.com/downloads/)
 
-##### NOTE: If you have changed the database name in the query then change it in other files too 
+**Step 2: Cloning the project**
+1. Once installation is completed, create a folder named ```Banking-System``` in the location ```C:\xampp\htdocs```.
+2. Then open the command prompt and clone your fork of this repository inside ```Banking-System``` using ```git clone <fork link> .```
+3. Replace the password in ```connection.php``` with the password you have set up for your SQL Database.
+4. Now, we need to initialize the database in the local system. For this, run the queries given in ```initialize.sql``` in MySQL Command Line or MySQL Workbench.
+5. And now, your project is ready to run.
 
-**File Setup**
+**Step 3: Running the project**
+1. Open XAMPP Control Panel and start MySQL and Apache Server.
+2. Open ```index.html``` and you will find the project running.
 
-//Add steps to run a php project
+
+##### NOTE: If you have changed the database name in the query then change it in other files too. So, avoid changing the database name.
 
 
 ## How to contribute    
